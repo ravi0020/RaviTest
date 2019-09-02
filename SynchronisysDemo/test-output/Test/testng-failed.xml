@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Test]" parallel="tests">
+  <test thread-count="2" name="SynchronisysDemo1(failed)" parallel="tests">
+    <parameter name="BrowserName" value="firefox"/>
+    <classes>
+      <class name="com.synchronisys.testcases.SampleTest">
+        <methods>
+          <include name="Validate_Login" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.synchronisys.testcases.SampleTest -->
+    </classes>
+  </test> <!-- SynchronisysDemo1(failed) -->
+</suite> <!-- Failed suite [Test] -->

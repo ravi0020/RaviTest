@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Test" duration-ms="52635" started-at="2019-09-02T13:47:08Z" finished-at="2019-09-02T13:48:01Z">
+    <groups>
+    </groups>
+    <test name="SynchronisysDemo" duration-ms="52635" started-at="2019-09-02T13:47:08Z" finished-at="2019-09-02T13:48:01Z">
+      <class name="com.synchronisys.testcases.SampleTestCase">
+        <test-method status="PASS" signature="Validate_Login(java.lang.String)[pri:0, instance:com.synchronisys.testcases.SampleTestCase@1794d431]" name="Validate_Login" duration-ms="51457" started-at="2019-09-02T13:47:09Z" finished-at="2019-09-02T13:48:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Login -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.synchronisys.testcases.SampleTestCase@1794d431]" name="close" is-config="true" duration-ms="970" started-at="2019-09-02T13:48:00Z" finished-at="2019-09-02T13:48:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.synchronisys.testcases.SampleTestCase -->
+    </test> <!-- SynchronisysDemo -->
+  </suite> <!-- Test -->
+</testng-results>
