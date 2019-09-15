@@ -7,12 +7,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Actions;
 
 public class WebUtil {
 
 	public static WebDriver driver;
-
+	public static Actions Action;
 	/*************************** Click On element **********************************************************************/
+
 
 	public static void fn_Click(WebElement we){
 		we.click();
@@ -22,7 +24,7 @@ public class WebUtil {
 
 	public static void fn_SendKeys(WebElement we, String enterValue){
 		we.sendKeys(enterValue);
-		
+
 	}
 
 	/****************************** Browser Open ***********************************************************************/
@@ -56,6 +58,23 @@ public class WebUtil {
 		driver.get(Url);
 		System.out.println("Url: "+Url+"" );
 	}
+
+	/********************* Get Action Class Object **********************************************/	
+
+	public static Actions ActionObject(){
+		Action=null;
+		if(Action==null){
+			Action=new Actions(driver);
+		}else {
+			System.out.println("action object already created");
+		}
+
+
+		return Action;
+
+	}
+
+	/******************** close  browser ******************************************************/
 
 	public static void fn_CloseBrowser(){
 

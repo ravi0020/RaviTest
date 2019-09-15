@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Test]" parallel="tests">
-  <test thread-count="2" name="SynchronisysDemo1(failed)" parallel="tests">
-    <parameter name="BrowserName" value="firefox"/>
+  <test thread-count="2" name="SynchronisysDemo(failed)" parallel="tests">
+    <parameter name="BrowserName" value="chrome"/>
     <classes>
-      <class name="com.synchronisys.testcases.SampleTest">
+      <class name="com.synchronisys.testcases.SampleTestCase">
         <methods>
+          <include name="close"/>
           <include name="Validate_Login" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.synchronisys.testcases.SampleTest -->
+      </class> <!-- com.synchronisys.testcases.SampleTestCase -->
     </classes>
-  </test> <!-- SynchronisysDemo1(failed) -->
+  </test> <!-- SynchronisysDemo(failed) -->
 </suite> <!-- Failed suite [Test] -->
